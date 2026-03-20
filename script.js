@@ -3,10 +3,10 @@
    ========================================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     // --- 1. Preloader ---
     const preloader = document.getElementById('preloader');
-    
+
     // Simulate loading time for visual effect
     setTimeout(() => {
         preloader.style.opacity = '0';
@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
             initHeroAnimations();
         }, 800);
     }, 2000); // 2s loading time
-    
+
     // --- 2. Custom Cursor ---
     const cursorDot = document.querySelector('.cursor-dot');
     const cursorGlow = document.querySelector('.cursor-glow');
-    
+
     // Check if device supports hover (desktop)
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    
+
     if (!isTouchDevice) {
         let mouseX = window.innerWidth / 2;
         let mouseY = window.innerHeight / 2;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            
+
             cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
         }, { passive: true });
 
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- 3. Scroll Progress Indicator ---
     const scrollProgress = document.getElementById('scroll-progress');
     let isScrolling = false;
-    
+
     window.addEventListener('scroll', () => {
         if (!isScrolling) {
             window.requestAnimationFrame(() => {
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrollPercent = (scrollHeight > 0) ? (scrollTop / scrollHeight) * 100 : 0;
         scrollProgress.style.width = scrollPercent + '%';
-        
+
         // --- 4. Sticky Header ---
         const header = document.getElementById('header');
         if (scrollTop > 50) {
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             header.classList.remove('scrolled');
         }
-        
+
         // --- 5. Scroll to Top Button ---
         const scrollBtn = document.getElementById('scrollToTop');
         if (scrollTop > 500) {
@@ -92,11 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             scrollBtn.classList.remove('visible');
         }
-        
+
         // --- 6. Active Nav Link Highlighting ---
         let current = '';
         const sections = document.querySelectorAll('section');
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             if (scrollTop >= (sectionTop - 200)) {
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function type() {
         const currentText = typingTexts[textIndex];
-        
+
         if (isDeleting) {
             typingElement.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setTimeout(type, typeSpeed);
     }
-    
+
     // --- 9. Counters Animation (Stats) ---
     function animateCounters() {
         const counters = document.querySelectorAll('.stat-num');
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         counters.forEach(counter => {
             const target = +counter.getAttribute('data-val');
-            
+
             const updateCount = () => {
                 const count = +counter.innerText;
                 const inc = target / speed;
@@ -190,31 +190,31 @@ document.addEventListener("DOMContentLoaded", () => {
                     counter.innerText = target + (target > 50 ? '+' : '');
                 }
             };
-            
+
             updateCount();
         });
     }
 
     // --- 11. Initializations ---
-    
+
     function initHeroAnimations() {
         // Start typing effect
         setTimeout(type, 1000);
-        
+
         // Start counters
         animateCounters();
-        
+
         // Optional: Animate Skill Bars when in view (using Intersection Observer)
         const skillBars = document.querySelectorAll('.skill-bar .fill');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if(entry.isIntersecting) {
+                if (entry.isIntersecting) {
                     const width = entry.target.getAttribute('data-width');
                     entry.target.style.width = width;
                 }
             });
         }, { threshold: 0.5 });
-        
+
         skillBars.forEach(bar => observer.observe(bar));
     }
 
@@ -231,20 +231,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Contact Form Submission (Prevent default for demo)
     const contactForm = document.getElementById('contact-form');
-    if(contactForm) {
+    if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const btn = contactForm.querySelector('button');
             const originalText = btn.innerHTML;
             btn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
             btn.style.opacity = '0.8';
-            
+
             setTimeout(() => {
                 btn.innerHTML = 'Message Sent! <i class="fa-solid fa-check"></i>';
                 btn.style.background = '#10b981'; // Success color
                 btn.style.color = 'white';
                 contactForm.reset();
-                
+
                 setTimeout(() => {
                     btn.innerHTML = originalText;
                     btn.style.background = ''; // Revert to primary
@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // --- 11. Initializations --- 
 // Initialize 3D Tilt Effect on interactive cards
-if(typeof VanillaTilt !== 'undefined') {
+if (typeof VanillaTilt !== 'undefined') {
     VanillaTilt.init(document.querySelectorAll('.glass-panel, .glowing-border, .service-card, .resume-card, .timeline-content'), {
         max: 5,
         speed: 400,
@@ -269,7 +269,7 @@ if(typeof VanillaTilt !== 'undefined') {
 }
 
 // Initialize Particle Background
-if(document.getElementById('particles-js')) {
+if (document.getElementById('particles-js')) {
     particlesJS('particles-js', {
         particles: {
             number: { value: 50, density: { enable: true, value_area: 800 } },
