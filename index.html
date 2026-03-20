@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Portfolio | Creative Technologist</title>
+    <meta name="description" content="Commercial-level personal portfolio website with a premium modern design.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Advanced Dynamic Background -->
+    <div class="bg-animation-overlay">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="brand-reveal">SOWNDAPPAN<span>.A</span></h1>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#hero" class="logo">SOWNDAPPAN<span>.A</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link btn-header">Hire Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div id="particles-js"></div>
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge" data-aos="fade-up">Welcome to my universe</span>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                        Hi, I'm <span class="gradient-text">Sowndappan.A</span><br>
+                        Creative <span class="typing-text"></span>
+                    </h1>
+                    <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+                        Seeking a Challenging Career that will enable me to utilize my competence to work with a
+                        growth-oriented organization, which adequately utilizes my strong skills in Production
+                        Coordinator, Team Leadership, and Frontend Development.
+                    </p>
+                    <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#contact" class="btn btn-primary">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-item">
+                            <h3 class="stat-num" data-val="12">0</h3>
+                            <p>Years Expr.</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-num" data-val="6">0</h3>
+                            <p>Yrs Team Lead</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-num" data-val="4">0</h3>
+                            <p>Yrs Proj Tracking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="image-wrapper">
+                        <!-- User's professional photo -->
+                        <img src="profile.jpg" alt="Sowndappan.A - Production Co-ordinator" class="profile-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Scroll Down Indicator -->
+            <a href="#about" class="animated-scroll" data-aos="fade-up" data-aos-delay="600">
+                <div class="mouse-icon">
+                    <span class="wheel"></span>
+                </div>
+                <span class="scroll-text">Scroll To Explore</span>
+                <i class="fa-solid fa-angles-down scroll-arrows"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container about-container">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="remote_laptop.png" alt="Professional Remote Working Setup with Laptop">
+                    <div class="experience-card glowing-border">
+                        <span class="exp-years">12+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-title" data-aos="fade-up">
+                        <span class="subtitle">About Me</span>
+                        <h2>Bridging Design & <br><span class="gradient-text">Technology</span></h2>
+                    </div>
+                    <p class="about-desc" data-aos="fade-up" data-aos-delay="100">
+                        I am currently working at XBP Asia Inc as a Production Co-ordinator. I have a proven track
+                        record of 12 years of total experience, including 4 years in end-to-end project tracking and
+                        customer communications, 6 years as a Team Leader, and 2 years in Data Entry at Source Hov in
+                        Salem.
+                    </p>
+                    <p class="about-desc" data-aos="fade-up" data-aos-delay="150">
+                        In addition to my administrative and leadership background, I possess intermediate-level
+                        knowledge of HTML, CSS, JavaScript, and React, aiming to transition further into cutting-edge
+                        Frontend Development.
+                    </p>
+                    <div class="about-info" data-aos="fade-up" data-aos-delay="200">
+                        <div class="info-box">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <div>
+                                <h4>Premium Quality</h4>
+                                <span>Commercial-grade solutions</span>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <i class="fa-solid fa-rocket"></i>
+                            <div>
+                                <h4>Fast Delivery</h4>
+                                <span>Optimized & efficient process</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Role Summary & Responsibilities Section -->
+        <section id="role-summary" class="role-summary-section section-padding">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title center">
+                    <span class="subtitle">Overview</span>
+                    <h2>Role <span class="gradient-text">Summary</span></h2>
+                </div>
+
+                <div class="role-container glass-panel" style="padding: 40px; border-radius: 20px;">
+                    <p class="review-text"
+                        style="font-size: 1.1rem; margin-bottom: 30px; color: var(--text-secondary);">
+                        As a Production Coordinator, I am responsible for supporting daily production activities,
+                        coordinating with internal teams, tracking work progress, and ensuring smooth operations in line
+                        with company schedules and requirements. My role focuses on planning, communication,
+                        documentation, reporting, and maintaining workflow efficiency across departments.
+                    </p>
+
+                    <h3 style="margin-bottom: 25px; font-size: 1.4rem;"><i class="fa-solid fa-list-check"
+                            style="color: var(--accent-primary); margin-right: 10px;"></i> Roles and Responsibilities
+                    </h3>
+                    <ul class="wcm-list"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px;">
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-calendar-check"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Coordinated
+                                day-to-day production activities to ensure smooth workflow and on-time task completion
+                            </p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-arrows-spin"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Followed up
+                                with different departments to track production status and avoid delays</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-chart-line"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Prepared and
+                                maintained production reports, status updates, and daily records</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-calendar-day"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Supported
+                                planning and scheduling of production work based on priorities and deadlines</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-users"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Coordinated
+                                with supervisors, team members, and management for process updates</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-boxes-packing"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Ensured
+                                materials, documents, and operational requirements were available when needed</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-triangle-exclamation"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Monitored
+                                pending tasks and escalated issues to the concerned team for quick resolution</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-check-double"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Helped
+                                maintain quality standards and followed company process guidelines</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-hammer"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Assisted in
+                                improving workflow by identifying delays and supporting corrective actions</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-file-contract"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Maintained
+                                proper documentation for production activities, attendance, and operational records</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-people-group"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Supported
+                                team coordination to achieve daily and monthly production targets</p>
+                        </li>
+                        <li style="display: flex; gap: 15px; margin-bottom: 0;">
+                            <i class="fa-solid fa-comments"
+                                style="color: var(--accent-secondary); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0;">Communicated
+                                clearly with internal teams to ensure smooth handover and task completion</p>
+                        </li>
+                    </ul>
+
+                    <h3 style="margin-bottom: 20px; font-size: 1.4rem;"><i class="fa-solid fa-brain"
+                            style="color: var(--accent-primary); margin-right: 10px;"></i> Key Skills</h3>
+                    <div class="portfolio-tags" style="flex-wrap: wrap; gap: 12px;">
+                        <span
+                            style="font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">Production
+                            Coordination</span>
+                        <span
+                            style="font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">Team
+                            Communication</span>
+                        <span
+                            style="font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">Process
+                            Tracking</span>
+                        <span
+                            style="font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">Reporting
+                            & Documentation</span>
+                        <span
+                            style="font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">Time
+                            Management</span>
+                        <span
+                            style="font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">Problem
+                            Solving</span>
+                        <span
+                            style="font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">Workflow
+                            Monitoring</span>
+                        <span
+                            style="font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">Coordination
+                            with Cross-Functional Teams</span>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding bg-darker">
+            <div class="container">
+                <div class="section-title center" data-aos="fade-up">
+                    <span class="subtitle">My Expertise</span>
+                    <h2>Technical <span class="gradient-text">Proficiency</span></h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill Progress -->
+                    <div class="skills-progress" data-aos="fade-right">
+                        <h3 class="skill-group-title">Core Development</h3>
+
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>HTML5 / Semantic UI</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="fill" style="width: 0%" data-width="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>CSS3 / SCSS / Tailwind</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="fill" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>JavaScript / ES6+</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="fill" style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container">
+                            <div class="skill-info">
+                                <span>React.js / Next.js</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="fill" style="width: 0%" data-width="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Cards -->
+                    <div class="skills-cards" data-aos="fade-left">
+                        <div class="skill-card glowing-border">
+                            <i class="fa-solid fa-file-excel"></i>
+                            <h4>MS Excel & Office</h4>
+                            <p>Advanced data entry, spreadsheet management, and presentation building.</p>
+                        </div>
+                        <div class="skill-card glowing-border">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <h4>Team Leadership</h4>
+                            <p>6 years of experience leading teams, ensuring productivity at Source Hov.</p>
+                        </div>
+                        <div class="skill-card glowing-border">
+                            <i class="fa-solid fa-industry"></i>
+                            <h4>Production Coordination</h4>
+                            <p>Optimizing production workflows currently at XBP Asia Inc.</p>
+                        </div>
+                        <div class="skill-card glowing-border">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>Frontend Development</h4>
+                            <p>Building responsive interfaces with HTML, CSS, JS, and React.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-title center" data-aos="fade-up">
+                    <span class="subtitle">What I Do</span>
+                    <h2>Premium <span class="gradient-text">Services</span></h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="service-icon"><i class="fa-solid fa-industry"></i></div>
+                        <h3>Prod. Coordination</h3>
+                        <p>Streamlining processes and coordinating production tasks efficiently at enterprise levels.
+                        </p>
+                        <a href="#contact" class="service-link">Discuss Project <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Team Leadership</h3>
+                        <p>Managing teams, optimizing performance, and ensuring project delivery on time.</p>
+                        <a href="#contact" class="service-link">Discuss Project <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Frontend Dev</h3>
+                        <p>Creating responsive layouts using HTML, CSS, JS, and React for modern web applications.</p>
+                        <a href="#contact" class="service-link">Discuss Project <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Data Entry</h3>
+                        <p>High-accuracy data entry, MS Office, PowerPoint, and Excel management.</p>
+                        <a href="#contact" class="service-link">Discuss Project <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Me Section -->
+        <section class="why-choose-me section-padding">
+            <div class="container container-flex">
+                <div class="wcm-content" data-aos="fade-right">
+                    <div class="section-title">
+                        <span class="subtitle">Value Proposition</span>
+                        <h2>Why Choose <span class="gradient-text">Me?</span></h2>
+                    </div>
+                    <p>I don't just write code; I craft digital experiences tailored for business growth. Every line of
+                        code is written with performance, accessibility, and scalability in mind.</p>
+
+                    <ul class="wcm-list">
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <h4>Business-Focused Design</h4>
+                                <p>Designs aimed at conversion, user retention, and enterprise value.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <h4>Clean, Maintainable Code</h4>
+                                <p>Strict adherence to modern standards ensuring long-term scalability.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <h4>Flawless Responsiveness</h4>
+                                <p>Perfect fluid scaling across 320px mobile to 4K desktop screens.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wcm-visual" data-aos="fade-left">
+                    <div class="glow-sphere"></div>
+                    <div class="glass-feature-card f-card-1">
+                        <i class="fa-solid fa-code-commit"></i>
+                        <span>Clean Code</span>
+                    </div>
+                    <div class="glass-feature-card f-card-2">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>SEO Ready</span>
+                    </div>
+                    <div class="glass-feature-card f-card-3">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Blazing Fast</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process-section section-padding bg-darker">
+            <div class="container">
+                <div class="section-title center" data-aos="fade-up">
+                    <span class="subtitle">Workflow</span>
+                    <h2>My Working <span class="gradient-text">Process</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content glowing-border">
+                            <h3>Requirement Gathering</h3>
+                            <p>Deep dive into your business goals, target audience, and project specifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content glowing-border">
+                            <h3>Design & Wireframing</h3>
+                            <p>Creating visual architecture, user flows, and high-fidelity mockups.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content glowing-border">
+                            <h3>Development</h3>
+                            <p>Translating designs into clean, responsive, and animated code.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content glowing-border">
+                            <h3>Testing & Launch</h3>
+                            <p>Cross-device testing, performance optimization, and final deployment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Resume / Experience Section -->
+        <section id="resume" class="resume-section section-padding bg-darker">
+            <div class="container">
+                <div class="section-title center" data-aos="fade-up">
+                    <span class="subtitle">Background</span>
+                    <h2>My <span class="gradient-text">Resume</span></h2>
+                </div>
+
+                <div class="resume-grid">
+                    <!-- Education -->
+                    <div class="resume-col" data-aos="fade-right">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                        <div class="resume-card glass-panel">
+                            <span class="resume-date">2013</span>
+                            <h4>D.E.C.E</h4>
+                            <span class="resume-issuer">The Kongu Polytechnic College</span>
+                            <p>Department of Technical Education. Graduated with 72%.</p>
+                        </div>
+                        <div class="resume-card glass-panel">
+                            <span class="resume-date">2009</span>
+                            <h4>SSLC</h4>
+                            <span class="resume-issuer">Veeralakshmi Vidyala Hr Sec. School</span>
+                            <p>State Board. Graduated with 69%.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="resume-col" data-aos="fade-left">
+                        <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                        <div class="resume-card glass-panel">
+                            <span class="resume-date">4 Years (Current)</span>
+                            <h4>Production Co-ordinator</h4>
+                            <span class="resume-issuer">XBP Asia Inc</span>
+                            <p>End-to-end project tracking, handling customer calls, and maintaining email
+                                communications.</p>
+                        </div>
+                        <div class="resume-card glass-panel">
+                            <span class="resume-date">6 Years</span>
+                            <h4>Team Leader</h4>
+                            <span class="resume-issuer">Source Hov, Salem</span>
+                            <p>Led and managed teams effectively to meet targets.</p>
+                        </div>
+                        <div class="resume-card glass-panel">
+                            <span class="resume-date">2 Years</span>
+                            <h4>Data Entry</h4>
+                            <span class="resume-issuer">Source Hov, Salem</span>
+                            <p>Data entry operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center-btn" data-aos="fade-up">
+                    <a href="#" class="btn btn-primary" download><i class="fa-solid fa-download"></i> Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-title center" data-aos="fade-up">
+                    <span class="subtitle">Get In Touch</span>
+                    <h2>Let's Work <span class="gradient-text">Together</span></h2>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info -->
+                    <div class="contact-info glass-panel" data-aos="fade-right">
+                        <h3>Contact Information</h3>
+                        <p>Ready to start your next big project? Reach out to me directly or use the contact form.</p>
+
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:sowndappan.a@gmail.com">sowndappan.a@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+919080101970">+91 90801 01970</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>200, SRJ Complex, Kalarampatti 1st St<br>Karungalpatti Main Road, Gugai,
+                                    Salem-636006</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-dribbble"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container glass-panel" data-aos="fade-left">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Project Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required
+                                    placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message <i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">SOWNDAPPAN<span>.A</span></a>
+                <p>Creating premium digital experiences that elevate brands and drive commercial success.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom border-top">
+            <p>&copy; 2026 Sowndappan.A. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Particles JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
